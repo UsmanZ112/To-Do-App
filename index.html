@@ -1,0 +1,86 @@
+<!Doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="modal" id="modal-form">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <form class="task-form" id="task-form">
+                <h2>Task Details</h2>
+                <label for="title">Task Title:</label><br>
+                <input type="text" id="title" name="title"><br>
+                <label for="description">Description:</label><br>
+                <input type="text" id="description" name="description"><br>
+                <button type="submit" id="form-submit"> Submit</button>
+            </form>
+
+        </div>
+    </div>
+    <div class="edit-modal" id="editmodal-form">
+        <div class="editmodal-content">
+            <span class="editclose-modal">&times;</span>
+            <form class="edittask-form" id="edittask-form">
+                <h2>Task Details</h2>
+                <label for="edittitle">Task Title:</label><br>
+                <input type="text" id="edittitle" name="edittitle"><br>
+                <label for="editdescription">Description:</label><br>
+                <input type="text" id="editdescription" name="editdescription"><br>
+                <button type="submit" id="editform-submit"> Update </button>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="final-task">
+        <header>
+            <h1>jQuery Final Practice</h1>
+            <p>Developing a 'To-Do List App' as mentioned in the Roadmap</p>
+        </header>
+        <div class="task-container">
+            <div class="task-description">
+                <h2>Final Practice of JQuery</h2>
+                <!--Task1:Week5-->
+                <p> > Add new tasks (input + button)<br>
+                    > Mark tasks as complete (strike-through or color change)<br>
+                    > Delete tasks with a button<br>
+                    > Save tasks in localStorage so they remain after refresh
+                </p>
+            </div>
+            <button type="button" id="add-task"> Add Task </button>
+            <div class="table">
+                <table id="data-table">
+                    <thead>
+                        <tr>
+
+                            <th>Task</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                            <th>Action </th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        if (typeof jQuery == 'undefined') {
+            document.write('<script src="js/jquery-3.7.1.min.js"><\/script>');
+        }
+    </script>
+    <script src="script.js"></script>
+
+   
+    </div>
+</body>
+
+</html>
