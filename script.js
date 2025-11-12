@@ -26,14 +26,18 @@
                     alert('please complete task details')
                 }
                 else {
-                    tasks.push(newtask);
-                    localStorage.setItem('tasks', JSON.stringify(tasks));
-                    $('.modal').css('display', 'none');
-                    setTimeout(() => {
-                        alert('Saved Successfully');
-                    }, 200);
-                }
-            });
+                     tasks.push(newtask);
+                     localStorage.setItem('tasks', JSON.stringify(tasks));
+                      $('.modal').css('display', 'none');
+               setTimeout(() => {
+                      alert('Saved Successfully');
+               setTimeout(() => {
+             alert('Refresh/reload the page to see the saved record');
+                     }, 500);
+
+                   }, 200);
+                   }
+                   });
 
 
             function displaydata() {
@@ -127,4 +131,5 @@
             
 
         });
+
     
